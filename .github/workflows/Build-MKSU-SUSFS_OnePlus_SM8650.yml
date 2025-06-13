@@ -8,23 +8,23 @@ on:
         required: true
         type: choice
         options:
-          - OnePlus 12
-          - OnePlus 13R
           - OnePlus Ace3 Pro
+          - OnePlus 13R
+          - OnePlus Ace12
           - OnePlus Ace5
           - OnePlus Pad Pro
       enable_lto:
         description: '启用 Full LTO'
         type: boolean
-        default: false
+        default: true
       enable_polly:
         description: '启用 Polly'
         type: boolean
-        default: false
+        default: true
       enable_o3:
         description: '启用 O3 优化'
         type: boolean
-        default: false
+        default: true
 
 jobs:
   build:
